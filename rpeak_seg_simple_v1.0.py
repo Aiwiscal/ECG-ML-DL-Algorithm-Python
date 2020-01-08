@@ -33,7 +33,7 @@ def test_rpeaks_simple(data_path):
     # 2) 调用ReturnTuple的as_dict()方法，得到Python有序字典（OrderedDict）类型
     logging.info("使用第2种方式取R波位置序列 ... ")
     rpeaks_indices_2 = rpeaks.as_dict()
-    #    然后使用变量名（这里是rpeaks）作为key取值。
+    #    然后使用说明文档中的参数名（这里是rpeaks）作为key取值。
     rpeaks_indices_2 = rpeaks_indices_2["rpeaks"]
     logging.info("完成. 结果类型为 " + str(type(rpeaks_indices_2)))
 
